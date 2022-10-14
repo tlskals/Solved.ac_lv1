@@ -11,8 +11,8 @@ public class A10818 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        int a = Integer.parseInt(br.readLine());
-        StringTokenizer st = new StringTokenizer(br.readLine()," ");
+        int a = Integer.parseInt(br.readLine()); //5
+        StringTokenizer st = new StringTokenizer(br.readLine()); // 10,35,30,7
 
         int i = 0;
         int[] arr = new int[a];
@@ -20,7 +20,6 @@ public class A10818 {
             arr[i] = Integer.parseInt(st.nextToken());
             i++;
         }
-
         Arrays.sort(arr);
         bw.write(arr[0] + " " + arr[a - 1]);
         bw.flush();
