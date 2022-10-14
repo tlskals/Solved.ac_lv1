@@ -24,7 +24,6 @@ public class A2577 {
         for (int i : arr) { // 반복문을 사용하여 배열 출력
             bw.write(i + "\n"); // "\n" 사용 시 줄바꿔줌 (= bw.nextLine())
         }
-        bw.newLine();
         bw.flush();
         bw.close();
     }
