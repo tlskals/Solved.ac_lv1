@@ -25,8 +25,10 @@ public class A2920 {
             } else if (arr[i]==arr[i+1]+1) {
                 result = "descending";
             }
-            else  result = "mixed";
-            break;
+            else {
+                result = "mixed";
+                break;
+            }
         }
         bw.write(result);
         bw.flush();
