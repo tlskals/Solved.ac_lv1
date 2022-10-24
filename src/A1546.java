@@ -12,23 +12,25 @@ public class A1546 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        int a = Integer.parseInt(br.readLine());
-        StringTokenizer st = new StringTokenizer(br.readLine());
+        int a = Integer.parseInt(br.readLine()); // 시험본 과목 수 3
+        StringTokenizer st = new StringTokenizer(br.readLine()); // 각 시험 점수 40 80 60
         double arr[] = new double[a];
 
         for(int i = 0; i < arr.length; i++) {
             arr[i] = Double.parseDouble(st.nextToken());
         }
+        // {40, 80 ,60}
 
-        Arrays.sort(arr);
+        Arrays.sort(arr); // {40, 60, 80}
 
         double total = 0;
 
         for(int i = 0; i < arr.length; i++) {
-            total += ((arr[i] / arr[arr.length - 1]) * 100);
+            total += ((arr[i] / arr[arr.length - 1]) * 100); // (40/80)*100 / 60/80*100
         }
+
         br.close();
-        bw.write(String.valueOf(total / arr.length));
+        bw.write(String.valueOf(total / a));
         bw.flush();
         bw.close();
     }

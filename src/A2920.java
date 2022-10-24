@@ -10,7 +10,7 @@ public class A2920 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        int [] arr = new int[8];
+        int [] arr = new int[8]; //1~8 1 2 3 4 5 6 7 8
         String result = "";
 
         StringTokenizer st = new StringTokenizer(br.readLine());
